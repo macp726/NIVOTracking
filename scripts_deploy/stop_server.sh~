@@ -1,0 +1,2 @@
+#!/bin/bash
+service tomcat6 stop

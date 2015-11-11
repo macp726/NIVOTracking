@@ -1,0 +1,4 @@
+#!/bin/bash
+apt-get update
+apt-get install tomcat7
+service tomcat7 stop

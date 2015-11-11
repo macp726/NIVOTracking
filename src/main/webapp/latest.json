@@ -1,0 +1,25 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "imei": "359971040662016",
+                "end": "2015-04-01 11:41:55.464"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0617152,
+                    4.6583249
+                ]
+            }
+        }
+    ]
+}
