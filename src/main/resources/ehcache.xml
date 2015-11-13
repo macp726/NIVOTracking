@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="true" monitoring="autodetect"
+         dynamicConfig="true" maxBytesLocalHeap="400M" maxBytesLocalOffHeap="2G">
+
+-->
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true">
+
+<diskStore path="java.io.tmpdir"/>
+
+<!-- <cacheManagerEventListenerFactory class="" properties=""/> -->
+
+<!-- 10min = 600seg -->
+<defaultCache maxEntriesLocalHeap="0" eternal="false" timeToIdleSeconds="1200" timeToLiveSeconds="1200">
+</defaultCache>
+
+
+<cache name="mg.nivo.tracking.MYCACHE"
+	timeToLiveSeconds="3600" timeToIdleSeconds="600" maxEntriesLocalHeap="500"
+	overflowToDisk="false" eternal="false" diskSpoolBufferSizeMB="0"
+	memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+</cache>
+
+
+</ehcache>
